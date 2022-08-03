@@ -126,9 +126,9 @@ async def dm(ctx, message):
                 await member.send(message)
     
     await ctx.reply(f"Fatto! Pingato {len(dm_users)} utenti in {round(time.perf_counter() - start, 1)} secondi")
-
+"""
 @bot.command()
-async def aiuto(ctx):
+async def help(ctx):
     '''
     Sends the help message
     '''
@@ -139,6 +139,7 @@ async def aiuto(ctx):
 !seeroles: Fa vedere tutti i ruoli che verranno pingati
 !dm: Invia un dm a tutti i ruoli selezionati
     ''')
+"""
 
 # Finally run the bot
 bot.run(TOKEN)
