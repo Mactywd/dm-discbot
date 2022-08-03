@@ -43,6 +43,9 @@ def parse_roles(ctx, roles):
 
     return found_roles
 
+def operate_json(action, data):
+    existing = open
+
 ##################
 ## BOT COMMANDS ##
 ##################
@@ -53,7 +56,7 @@ async def setroles(ctx, *roles):
     Set the roles that will be pinged. If a role doesn't exist it will be ignored
     '''
     print("Setting the roles...")
-    roles = roles_exist(ctx, roles)
+    roles = roles_exist(ctx, set(roles))
 
     with open('roles.json', 'w') as f:
         f.write(json.dumps(roles))
